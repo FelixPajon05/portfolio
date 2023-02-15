@@ -1,0 +1,9 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
+body {
+    background: radial-gradient(79.43% 251.58% at 23.18% 73.07%, #0142a0 0, #0f133a
+     44.41%, #101034 56.43%, #141034 69.58%, #301436 100%, #411958 0);
+    background-attachment: fixed;
+}

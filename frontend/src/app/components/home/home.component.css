@@ -1,0 +1,64 @@
+
+* {
+    font-family: Orbitron;
+    color: #3dfcd2;
+}
+
+.row {
+    padding-top: 100px;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+h5 {
+    font-style: italic;
+}
+
+button {
+    background-color: blue;
+    border: 0;
+    color: white;
+    font-weight: bold;
+    margin-left: 100px;
+}
+
+/* Menu Social */
+
+.social {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 15%;
+}
+
+.social svg {
+    height: 30px;
+    transition: all 0.3s;
+    width: auto;
+}
+
+.social svg:hover {
+    transform: scale(2);
+}
+
+.social .nav-links{
+    list-style: none;
+}
+
+.social .nav-links li {
+    display: inline-block;
+    padding: 20px;
+}
+
+@media (max-width: 200px) and (max-heigth: 160px) {
+    h3, h5 {
+        font-size: 20px;
+    }
+}

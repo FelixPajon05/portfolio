@@ -1,0 +1,82 @@
+
+.container {
+  padding-top: 50px;
+}
+
+.row {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.rectangle {
+  height: 300px;
+  border-radius: 40px 20px;
+  margin-top: 1rem;
+}
+
+.rectangle:hover .overlay {
+  opacity: 1;
+}
+
+#felixPhotoAbout {
+  height: 50%;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
+
+.photoEggs {
+  height: 50%;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
+
+.imgCenter {
+  text-align: center;
+}
+
+.bg-1 {
+  background-image: linear-gradient(rgb(41, 6, 197), rgb(95, 144, 170));
+}
+
+.bg-2 {
+  background-image: linear-gradient(#67b26f, rgb(97, 68, 224));
+}
+
+.bg-3 {
+  background-image: linear-gradient(#f8677183, #0fafc4);
+}
+
+.bg-4 {
+  background: #67B26F;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4ca2cd, #67B26F);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4ca2cd, #67B26F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+h5 {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+h1 {
+  color: #16f4d0;
+}
+
+.overlay {
+  background-color: #008CBA;
+  margin: 3%;
+  border-radius: 10px 10px;
+  padding: 2px;
+}
+
+.felixPhotoAbout {
+  width: 35%;
+  height: 35%;
+}
+
+  /* @media screen and (max-width: 800px) {
+  }
+
+  @media screen and (max-width: 600px) {
+  } */

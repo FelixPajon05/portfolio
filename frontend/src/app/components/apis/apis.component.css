@@ -1,0 +1,29 @@
+
+.container {
+    padding-top: 50px;
+    margin-top: 2%;
+}
+
+.card {
+    background-color: black;
+    color: #3dfcd2;
+}
+
+h5 {
+    font-family: Orbitron;
+}
+
+p {
+    font-family: JetBrains;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    height: 40px;
+    font-family: Orbitron;
+}
+
+button:hover {
+    background-color: rgb(1, 105, 165);
+}

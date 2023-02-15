@@ -1,0 +1,28 @@
+* {
+    font-family: Orbitron;
+    color: #3dfcd2;
+}
+
+h1, h3 {
+    font-weight: bold;
+    margin-top: 10%;
+}
+
+.card {
+    background-color: black;
+    color: #3dfcd2;
+}
+
+.button {
+    background-color: blue;
+    color: #fff;
+    height: 40px;
+}
+
+.button:hover {
+    background-color: rgb(1, 105, 165);
+}
+
+a {
+    text-decoration: none;
+}

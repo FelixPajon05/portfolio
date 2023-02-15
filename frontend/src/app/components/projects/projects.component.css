@@ -1,0 +1,53 @@
+
+.container {
+    padding-top: 50px;
+}
+
+.row {
+    margin: 10px;
+}
+
+.card {
+    background-color: black;
+    color: white;
+}
+
+.card-body {
+    text-align: justify;
+}
+
+.bg-theme {
+    color: #16f4d0;
+}
+
+.project {
+    height: 400px;
+}
+
+.imgProject {
+    width: 100px;
+}
+
+span .text-justify {
+    text-align: justify;
+}
+
+.text-center {
+    text-align: center;
+}
+
+p, span {
+    font-family: JetBrains;
+}
+
+h4 {
+    font-family: Orbitron;
+}
+
+li {
+    border-radius: 100%;
+    font-style: oblique;
+    font-size: 10px;
+    color: #16f4d0;
+    background-color: transparent;
+}

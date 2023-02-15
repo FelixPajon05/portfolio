@@ -1,0 +1,42 @@
+<div class="container justify-content-center mt-5">
+    <h1 class="title">API to know the weather in real time</h1>
+    <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="card items">
+                <div class="card-body">
+                    <form (submit)="postLocation(cityName, countryCode)">
+                        <div class="form-group">
+                            <label>Write the name of a city</label>
+                            <input type="text" class="form-control" placeholder="merida" #cityName>
+                        </div>
+                        <div class="form-group my-2">
+                            <label>Write the name of country</label>
+                            <input type="text" class="form-control" placeholder="mexico" #countryCode>
+                        </div>
+                        <div class="d-grid gap-2 col-6 mx-auto">
+                            <button class="button">Save</button>
+                            <button routerLink="/apis" class="button" type="button">Back</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="card" *ngIf="weather">
+                <div class="card-body">
+                    <h3>These are the weather conditions in {{weather.name}}, {{weather.sys.country}}</h3>
+                    <h1>{{weather.main.temp}} C°</h1>
+                    <span><strong>Humidity:</strong> {{weather.main.humidity}}%</span><br>
+                    <span><strong>Wind speed:</strong> {{weather.wind.speed}} km/h</span><br>
+                    <span><strong>Pressure:</strong> {{weather.main.pressure}}</span><br>
+                    <span><strong>{{weather.weather[0].description | titlecase}}</strong></span>
+                    <div class="d-flex justify-content-end">
+                        <a href="https://openweathermap.org/api">
+                            Open weather
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,42 @@
+
+<div class="container justify-content-center mt-5">
+    <h1 class="title">API to know movie details</h1>
+    <div class="row">
+        <div class="col-lg-6 col-sm-12 col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <form (submit)="postMovie(nameMovie)">
+                        <div class="form-group">
+                            <label>Write the name of a movie</label>
+                            <input type="text" class="form-control" placeholder="John Wick" #nameMovie>
+                        </div>
+                        <div class="d-grid gap-2 col-6 mx-auto">
+                            <button class="button">Save</button>
+                            <button routerLink="/apis" class="button" type="button">Back</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-body" *ngIf="movie">
+                    <img src="{{movie.Poster}}" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-sm-12 col-md-12">
+            <div class="card" *ngIf="movie">
+                <div class="card-body">
+                    <h5 class="card-title">{{movie.Title}}</h5>
+                    <p>{{movie.Plot}}</p>
+                    <p><strong>Actors: </strong>{{movie.Actors}}</p>
+                    <p><strong>Gender: </strong>{{movie.Genre}} <strong>Rated: </strong>{{movie.Rated}}</p>
+                    <p><strong>Year: </strong>{{movie.Year}} <strong>Runtime: </strong>{{movie.Runtime}}</p>
+                    <p><strong>Awards: </strong>{{movie.Awards}}</p>
+                    <div class="d-flex justify-content-end">
+                        <a href="http://www.omdbapi.com/">
+                            OMDb api
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
