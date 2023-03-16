@@ -1,0 +1,37 @@
+
+header {
+    background-color: #023047;
+    border-bottom: gray solid 1px;
+}
+
+nav {
+    padding: 1rem;
+    flex-direction: row;
+}
+
+/* ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+li {
+    display: inline;
+} */
+
+svg {
+    width: 1.5rem;
+}
+
+section {
+    padding: 1em;
+    background-color: #023047;
+}
+
+article {
+    background-color: #8ecae6;
+}
+
+footer {
+    background-color: #219ebc;
+}
