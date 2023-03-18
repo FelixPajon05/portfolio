@@ -4,23 +4,88 @@
 body {
     background: radial-gradient(79.43% 251.58% at 23.18% 73.07%,#0142a0 0,#0f133a 44.41%,#101034 56.43%,#141034 69.58%,#301436 100%,#411958 0);
     background-attachment: fixed;
+    cursor: url("/assets/img/cursor.svg"), auto;
+}
+
+svg {
+    cursor: url("/assets/img/pointer.svg"), auto;
 }
 
 p {
     background-color:  rgb(132 204 22);
     color: white;
     padding: 1rem;
+    font-family: Fredoka One;
+}
+
+span {
+    font-family: Lilita One;
 }
 
 img {
     border-radius: 50%/60% 60% 40% 40%;
 }
 
+.grid-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
 .skills {
     text-align: center;
     color: white;
+    font-family: Orbitron;
 }
 
 .card {
     background-color: rgb(132 204 22);
+    width: 5rem;
+    height: 5rem;
+}
+
+.card-soft {
+    background-color: rgb(132 204 22);
+    padding: 1rem;
+    font-family: Golos Text;
+}
+
+h1 {
+    color: white;
+}
+
+#uno {
+    font-family: Fredoka One;
+}
+
+#dos {
+    font-family: Golos Text;
+}
+
+#tres {
+    font-family: Kanit;
+}
+
+#cuatro {
+    font-family: Lilita One;
+}
+
+#cinco {
+    font-family: Orbitron;
+}
+
+footer {
+    background-color: rgb(132 204 22);
+}
+
+.footer-container {
+    display: flex;
+    align-self: center;
+}
+
+h4 {
+    font-family: Fredoka One;
+    color: white;
 }

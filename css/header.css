@@ -17,6 +17,7 @@ span {
 svg {
     width: 2rem;
     transition: all 0.3s;
+    cursor: url("/assets/img/pointer.svg"), auto;
 }
 
 svg:hover {
