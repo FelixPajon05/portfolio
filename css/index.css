@@ -7,6 +7,11 @@ body {
     cursor: url("/assets/img/cursor.svg"), auto;
 }
 
+section {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
 svg {
     cursor: url("/assets/img/pointer.svg"), auto;
 }
@@ -22,38 +27,40 @@ span {
     font-family: Lilita One;
 }
 
-img {
+#perfilPhoto {
     border-radius: 50%/60% 60% 40% 40%;
 }
 
-.grid-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+/************************ Tooling Section **********************/
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(5rem, 20rem));
+    grid-template-rows: repeat(2, 1fr);
+    gap: 4em;
 }
 
-.skills {
+.item {
+    background: rgb(132 204 22);
+    padding: 1em;
     text-align: center;
-    color: white;
-    font-family: Orbitron;
 }
 
-.card {
-    background-color: rgb(132 204 22);
-    width: 5rem;
-    height: 5rem;
+/*********************** Soft skills Section ************************/
+
+.soft-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(5rem, 25rem));
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
 }
 
-.card-soft {
-    background-color: rgb(132 204 22);
-    padding: 1rem;
-    font-family: Golos Text;
-}
+/***********************  ************************/
 
 h1 {
     color: white;
+    font-family: Orbitron;
+    text-align: center;
 }
 
 #uno {
@@ -80,12 +87,20 @@ footer {
     background-color: rgb(132 204 22);
 }
 
-.footer-container {
-    display: flex;
-    align-self: center;
-}
-
 h4 {
     font-family: Fredoka One;
     color: white;
 }
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* h1 {
+    color: #404040;
+    font-size: 1.25rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+} */
