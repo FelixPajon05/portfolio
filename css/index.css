@@ -3,13 +3,15 @@
 
 body {
     background: radial-gradient(79.43% 251.58% at 23.18% 73.07%,#0142a0 0,#0f133a 44.41%,#101034 56.43%,#141034 69.58%,#301436 100%,#411958 0);
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     cursor: url("/assets/img/cursor.svg"), auto;
 }
 
 section {
     margin-top: 5rem;
     margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
 }
 
 svg {
@@ -27,32 +29,24 @@ span {
     font-family: Lilita One;
 }
 
+.image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
 #perfilPhoto {
     border-radius: 50%/60% 60% 40% 40%;
+    width: 25rem;
 }
 
-/************************ Tooling Section **********************/
+/***********************  ************************/
 
-.skills-container {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(5rem, 20rem));
-    grid-template-rows: repeat(2, 1fr);
-    gap: 4em;
-}
-
-.item {
-    background: rgb(132 204 22);
-    padding: 1em;
+.card-soft {
+    background-color: rgb(132 204 22)                                                                                                                                                      ;
+    margin: 1rem;
     text-align: center;
-}
-
-/*********************** Soft skills Section ************************/
-
-.soft-container {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(5rem, 25rem));
-    grid-template-rows: repeat(2, 1fr);
-    gap: 1rem;
+    border-radius: 10px;
 }
 
 /***********************  ************************/
@@ -87,10 +81,34 @@ footer {
     background-color: rgb(132 204 22);
 }
 
+footer img {
+    height: 3rem;
+}
+
 h4 {
     font-family: Fredoka One;
     color: white;
 }
+
+/* *************** ***************** */
+
+.slider {
+    background-image: url("/assets/img/cedart.png");
+    background-size: 100% 100%;
+    width: 640px;
+    height: 360px;
+    border-radius: 10px;
+    animation: slide 10s infinite linear;
+}
+
+@keyframes slide {
+    25% {background-image: url("/assets/img/felix.png");}
+    50% {background-image: url("/assets/img/homeEmed.png");}
+    75% {background-image: url("/assets/img/adminEmed.png");}
+    100% {background-image: url("/assets/img/homeEmed.png");}
+}
+
+/* *************** ***************** */
 
 .footer-container {
     display: flex;
