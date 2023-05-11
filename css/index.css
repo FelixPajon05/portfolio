@@ -2,59 +2,100 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Golos+Text:wght@700&family=Kanit:wght@300&family=Lilita+One&family=Orbitron:wght@600&display=swap');
 
 body {
-    background: radial-gradient(79.43% 251.58% at 23.18% 73.07%,#0142a0 0,#0f133a 44.41%,#101034 56.43%,#141034 69.58%,#301436 100%,#411958 0);
-    /* background-attachment: fixed; */
-    cursor: url("/assets/img/cursor.svg"), auto;
+    background:         radial-gradient(79.43% 251.58% at 23.18% 73.07%,#0142a0 0,#0f133a 44.41%,#101034 56.43%,#141034 69.58%,#301436 100%,#411958 0);
+    cursor:             url("/assets/img/cursor.svg"), auto;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-section {
-    margin-top: 5rem;
-    margin-bottom: 2rem;
-    display: flex;
-    justify-content: center;
+/***************** Header *******************/
+
+header {
+    background-color: transparent;
 }
 
-svg {
+.navbar-brand {
+    font-family: Orbitron;
+}
+
+.d-flex span {
+    color: rgb(132 204 22);
+    margin: 0.5rem;
+}
+
+nav svg {
+    width: 2rem;
+    transition: all 0.3s;
     cursor: url("/assets/img/pointer.svg"), auto;
 }
 
-p {
-    background-color:  rgb(132 204 22);
-    color: white;
-    padding: 1rem;
-    font-family: Fredoka One;
+nav svg:hover {
+    transform: scale(2);
 }
 
-span {
-    font-family: Lilita One;
+/***************** Header *******************/
+
+section {
+    display:            flex;
+    justify-content:    center;
+    margin-bottom:      2rem;
+    margin-top:         5rem;
+}
+
+svg {
+    cursor:             url("/assets/img/pointer.svg"), auto;
+}
+
+button {
+    cursor:             url("/assets/img/pointer.svg"), auto;
+}
+
+footer img {
+    cursor:             url("/assets/img/pointer.svg"), auto;
+}
+
+p {
+    background-color:   rgb(132 204 22);
+    color:              white;
+    font-family:        Fredoka One;
+    padding:            1rem;
+}
+
+span.full {
+    color: #84cc16;
+}
+
+.about-me {
+    text-align: justify;
 }
 
 .image {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1em;
+    display:            flex;
+    justify-content:    center;
+    margin-bottom:      1em;
 }
 
 #perfilPhoto {
-    border-radius: 50%/60% 60% 40% 40%;
-    width: 25rem;
+    border-radius:      50%/60% 60% 40% 40%;
+    width:              25rem;
 }
 
 /***********************  ************************/
 
 .card-soft {
-    background-color: rgb(132 204 22)                                                                                                                                                      ;
-    margin: 1rem;
-    text-align: center;
-    border-radius: 10px;
+    background-color:   #84cc16;
+    border-radius:      10px;
+    margin:             1rem;
+    text-align:         center;
 }
 
 /***********************  ************************/
 
 h1 {
-    color: white;
-    font-family: Orbitron;
-    text-align: center;
+    color:              white;
+    font-family:        Orbitron;
+    text-align:         center;
 }
 
 #uno {
@@ -77,43 +118,161 @@ h1 {
     font-family: Orbitron;
 }
 
+/************** Projects **************/
+
+section .card .image {
+    background:         #84cc16;
+    border-radius:      25%;
+    height:             200px;
+    margin-top:         2rem;
+    padding:            3px;
+    width:              250px;
+}
+
+section .card .image img {
+    border:             2px solid #fff;
+    border-radius:      25%;
+    height:             100%;
+    object-fit:         cover;
+    width:              100%;
+}
+
+.card {
+    background:         #fff;
+    border-radius:      20px 20px 0 0;
+    margin:             20px 0;
+    position:           relative;
+    width:              20rem;
+}
+
+.card::before {
+    background:         #84cc16;
+    border-radius:      0 0 0 0;
+    content:            "";
+    height:             40%;
+    position:           absolute;
+    width:              100%;
+}
+
+.card .card-content {
+    align-items:        center;
+    display:            flex;
+    flex-direction:     column;
+    padding:            2rem;
+    position:           relative;
+}
+
+.card .name-professional {
+    align-items:        center;
+    display:            flex;
+    flex-direction:     column;
+}
+
+.name-professional .name {
+    font-size:          20px;
+    font-weight:        600;
+}
+
+.name-professional .professional {
+    font-size:          15px;
+    font-weight:        600;
+}
+
+.card .button {
+    display:            flex;
+    justify-content:    space-around;
+    margin-top:         2em;
+    width:              100%;
+}
+
+.card a {
+    cursor:             url("/assets/img/pointer.svg"), auto;
+    border:             1px solid #84cc16;
+    font-size:          14px;
+    margin-top:         1em;
+    outline:            none;
+    padding:            8px 22px;
+    transition:         all 0.3s ease;
+}
+
+.card a:hover {
+    box-shadow: 0px 5px 10px 0px #84cc16;
+}
+
+/************** Projects **************/
+
+/************** Modal *****************/
+
+.modal-header {
+    background-color: #84cc16;
+}
+
+.modal-body {
+    text-align: justify;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+/************** Modal *****************/
+
+
 footer {
-    background-color: rgb(132 204 22);
+    background-color:   rgb(132 204 22);
 }
 
 footer img {
-    height: 3rem;
+    height:             3rem;
 }
 
 h4 {
-    font-family: Fredoka One;
-    color: white;
+    color:              white;
+    font-family:        Fredoka One;
 }
 
 /* *************** ***************** */
 
 .slider {
-    background-image: url("/assets/img/cedart.png");
-    background-size: 100% 100%;
-    width: 640px;
-    height: 360px;
-    border-radius: 10px;
-    animation: slide 10s infinite linear;
+    height:             auto;
+    margin:             auto;
+    overflow:           hidden;
+    width:              75vw;
 }
 
-@keyframes slide {
-    25% {background-image: url("/assets/img/felix.png");}
-    50% {background-image: url("/assets/img/homeEmed.png");}
-    75% {background-image: url("/assets/img/adminEmed.png");}
-    100% {background-image: url("/assets/img/homeEmed.png");}
+.slider .slide-track {
+    animation:          scroll 40s linear infinite;
+    display:            flex;
+    width:              calc(30em * 10);
+    -webkit-animation:  scroll 30s linear infinite;
+}
+
+.slider .slide {
+    width:              15em;
+}
+
+.slider .slide svg {
+    width:              100%;
+}
+
+@keyframes scroll {
+    0% {
+        transform:      translateX(0);
+        -webkit-transform:translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-20em * 5));
+        -webkit-transform:translateX(calc(-20em * 5));
+    }
 }
 
 /* *************** ***************** */
 
 .footer-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    align-items:        center;
+    display:            flex;
+    justify-content:    center;
 }
 
 /* h1 {
