@@ -710,7 +710,9 @@ if (reduce) document.body.classList.add('calm');
 /* ---------- opening ---------- */
 (function () {
     const intro = $('#intro'); if (!intro) return;
-    if (reduce) { intro.remove(); window.__introDone = true; return; }
+    // la intro solo se ve una vez por visita: al recargar o volver, tu nombre aparece de inmediato
+    let seen = false; try { seen = sessionStorage.getItem('fp-intro') === '1'; sessionStorage.setItem('fp-intro', '1'); } catch (e) { }
+    if (reduce || seen) { intro.remove(); window.__introDone = true; return; }
     document.body.classList.add('intro-on');
     // leaf curtains
     const cols = ['#0E1266', '#141A7C', '#1E28A0', '#10146A', '#232FA8'];
